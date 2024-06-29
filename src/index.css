@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-underline {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .custom-underline::after {
+    content: '';
+    display: block;
+    width: 100%; /* Adjust this to change the underline length */
+    height: 3px; /* Adjust this to change the underline thickness */
+    background-color: #f39c12; /* Use Tailwind's decoration color */
+    position: absolute;
+    left: 7%; /* Center the underline */
+    bottom: 35px; /* Adjust this to control the distance from the text */
+  }
+  
