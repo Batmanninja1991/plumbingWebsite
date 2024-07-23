@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-            <ul className="flex justify-center items-center gap-10">
+            <ul className="flex gap-10 md:grid grid-cols-2 justify-center items-center md:gap-2 md:space-y-2">
               <li>
                 <Link to="/" className="hover:underline">
                   Home

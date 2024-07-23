@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Modal from "../components/Modal";
 
 const Navbar = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenu = () => {
@@ -12,6 +14,10 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     setMenuOpen(false);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -60,9 +66,13 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button className="hidden md:block bg-accent hover:bg-black hover:text-accent rounded-xl px-4 py-2 font-bold hover:scale-105">
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className="hidden md:block bg-accent hover:bg-black hover:text-accent rounded-xl px-4 py-2 font-bold"
+        >
           Free Estimates
         </button>
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
         <div
           className="flex justify-center items-center gap-4 md:hidden z-50 text-accent"
           onClick={handleMenu}

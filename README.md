@@ -1,9 +1,19 @@
-# React + Vite
+<h1>Plumbing Website</h1>
+This project is a professional and responsive plumbing website designed to showcase the services, portfolio, and contact information of a plumbing company. The website is built with modern web development technologies and best practices to ensure a seamless user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Features</h2>
+Home page with an overview of the company and its services.<br/>
+Services page detailing the various plumbing services offered.<br/>
+Portfolio page showcasing completed plumbing projects.<br/>
+About Us page with company history and team members.<br/>
+Contact page with a contact form.<br/>
+Responsive design for mobile, tablet, and desktop devices.<br/>
+SEO optimized.<br/>
+Fast loading times.<br/>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# plumbingWebsite
+<h2>Technologies Used</h2>
+<p>Front-end: React, Tailwind CSS</p>
+<p>Build Tool: Vite</p>
+<p>Deployment: Hostinger</p>
+<h3>Contact</h3>
+David Shaw - @davidshawwebdesign - davidshawwebdesign@gmail.com
